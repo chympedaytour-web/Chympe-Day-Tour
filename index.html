@@ -246,7 +246,7 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
 
 <div class="card" onclick="openModal('solo')">
     <h3>Solo Package</h3>
-    <div class="price">₹5,550</div>
+    <div class="price">₹5,600</div>
     <div class="card-line"></div>
     <span class="card-action">View Details →</span>
 </div>
@@ -254,7 +254,7 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
 <div class="card" onclick="openModal('two')">
     <span class="badge">MOST POPULAR</span>
     <h3>2 Persons</h3>
-    <div class="price">₹6,300</div>
+    <div class="price">₹6,400</div>
     <div class="card-line"></div>
     <span class="card-action">View Details →</span>
 </div>
@@ -262,7 +262,7 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
 <div class="card" onclick="openModal('three')">
     <span class="badge">GROUP</span>
     <h3>3 Persons</h3>
-    <div class="price">₹6,960</div>
+    <div class="price">₹7,105</div>
     <div class="card-line"></div>
     <span class="card-action">View Details →</span>
 </div>
@@ -270,7 +270,7 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
 <div class="card" onclick="openModal('four')">
     <span class="badge">BEST VALUE</span>
     <h3>4 Persons</h3>
-    <div class="price">₹7,600</div>
+    <div class="price">₹7,800</div>
     <div class="card-line"></div>
     <span class="card-action">View Details →</span>
 </div>
@@ -278,7 +278,7 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
 <div class="card" onclick="openModal('five')">
     <span class="badge">BEST VALUE</span>
     <h3>5 Persons</h3>
-    <div class="price">₹8,250</div>
+    <div class="price">₹8,500</div>
     <div class="card-line"></div>
     <span class="card-action">View Details →</span>
 </div>
@@ -286,7 +286,7 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
 <div class="card" onclick="openModal('six')">
     <span class="badge">BEST VALUE</span>
     <h3>6 Persons</h3>
-    <div class="price">₹8,890</div>
+    <div class="price">₹9,190</div>
     <div class="card-line"></div>
     <span class="card-action">View Details →</span>
 </div>
@@ -363,11 +363,7 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
     <p>© 2026 Chympe Day Tour | All Rights Reserved</p>
 </footer>
 
-<a class="whatsapp" 
-   href="https://wa.me/918131940018?text=Hello%20Chympe%20Team,%20I%20want%20to%20buy%20your%20Chympe%20Tour%20package." 
-   target="_blank">
-   💬
-</a>
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">💬</a>
 
 <!-- MODAL -->
 <div id="modal" class="modal" onclick="closeModal(event)">
@@ -384,93 +380,305 @@ Vehicle charge is <span style="font-weight: bold;">₹1,700</span>, and the rema
 const data = {
     solo: {
         title: "Solo Package",
-        price: "₹5,550",
+        price: "₹5,600",
         list: `
-        <li>Registration</li>
-        <li>1 Local Guide</li>
-        <li>Cave Entry (Dry Season)</li>
-        <li>Life Jacket</li>
-        <li>Torch Light (Free)</li>
-        <li>4×4 Vehicle (Dry Season)</li>
-        <li>Waterfall & Nature View</li>
-        <li>Bamboo Rafting (inside cave – dry season only)</li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Registration</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>1 Local Guide</span>
+            <span style="font-weight: 500;">₹1,000</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Cave Entry (Dry Season)</span>
+            <span style="font-weight: 500;">₹400</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Life Jacket</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Torch Light</span>
+            <span style="color: #22c55e; font-weight: 500;">Free</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>4×4 Vehicle (Dry Season)</span>
+            <span style="font-weight: 500;">₹4,000</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1em;">
+            <span>Grand Total</span>
+            <span style="color: #2563eb;">₹5,600</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; background: #f9fafb; padding: 8px; border-radius: 6px; margin-top: 8px;">
+            <span style="font-size: 0.95em;">Without vehicle service (Trekking)</span>
+            <span style="font-weight: 600; color: #059669;">₹1,850</span>
+        </li>
         `,
-        note: "Without Vehicle Service: <span style='font-weight:bold'>₹1,800</span><br><hr />Rainy Season Only: <span style='font-weight:bold;'>₹2,000</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹3,700</span>)."
+        note: "Rainy Season Only (Trekking): <span style='font-weight:bold; color: #2563eb;'>₹2,050</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹1,700 + ₹2,050 = <span style='color:#059669;'>₹3,750</span></span>)."
     },
     two: {
         title: "2 Persons – Most Popular",
-        price: "₹6,300",
+        price: "₹6,400",
         list: `
-        <li>Registration</li>
-        <li>1 Local Guide</li>
-        <li>Cave Entry (Dry Season)</li>
-        <li>Life Jacket</li>
-        <li>Torch Light (Free)</li>
-        <li>4×4 Vehicle (Dry Season)</li>
-        <li>Waterfall & Nature View</li>
-        <li>Bamboo Rafting (inside cave – dry season only)</li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Registration</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>1 Local Guide</span>
+            <span style="font-weight: 500;">₹600</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Cave Entry (Dry Season)</span>
+            <span style="font-weight: 500;">₹400</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Life Jacket</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Torch Light</span>
+            <span style="color: #22c55e; font-weight: 500;">Free</span>
+        </li>
+    
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 500; font-size: 1.0em;">
+            <span>Total</span>
+            <span style="color: #2563eb;">₹1,200 / Person</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 550;">
+            <span>2 Persons</span>
+            <span style="font-weight: 550;">₹2,400</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>4×4 Vehicle (Dry Season)</span>
+            <span style="font-weight: 500;">₹4,000</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1em;">
+            <span>Grand Total</span>
+            <span style="color: #2563eb;">₹6,400</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; background: #f9fafb; padding: 8px; border-radius: 6px; margin-top: 8px;">
+            <span style="font-size: 0.95em;">Without vehicle service (Trekking)</span>
+            <span style="font-weight: 600; color: #059669;">₹2,600</span>
+        </li>
         `,
-        note: "Without Vehicle Service: <span style='font-weight:bold;'>₹2,500</span><br><hr />Rainy Season Only: <span style='font-weight:bold;'>₹2,500</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹4,200</span>)."
+        note: "Rainy Season Only (Trekking): <span style='font-weight:bold; color: #2563eb;'>₹2,600</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹1,700 + ₹2,600 = <span style='color:#059669;'>₹4,300</span></span>)."
     },
     three: {
         title: "3 Persons – Group",
-        price: "₹6,960",
+        price: "₹7,105",
         list: `
-        <li>Registration</li>
-        <li>1 Local Guide</li>
-        <li>Cave Entry (Dry Season)</li>
-        <li>Life Jacket</li>
-        <li>Torch Light (Free)</li>
-        <li>4×4 Vehicle (Dry Season)</li>
-        <li>Waterfall & Nature View</li>
-        <li>Bamboo Rafting (inside cave – dry season only)</li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Registration</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>1 Local Guide</span>
+            <span style="font-weight: 500;">₹435</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Cave Entry (Dry Season)</span>
+            <span style="font-weight: 500;">₹400</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Life Jacket</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Torch Light</span>
+            <span style="color: #22c55e; font-weight: 500;">Free</span>
+        </li>
+    
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 500; font-size: 1.0em;">
+            <span>Total</span>
+            <span style="color: #2563eb;">₹1,035  / Person</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 550;">
+            <span>3 Persons</span>
+            <span style="font-weight: 550;">₹3,105</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>4×4 Vehicle (Dry Season)</span>
+            <span style="font-weight: 500;">₹4,000</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1em;">
+            <span>Grand Total</span>
+            <span style="color: #2563eb;">₹7,105</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; background: #f9fafb; padding: 8px; border-radius: 6px; margin-top: 8px;">
+            <span style="font-size: 0.95em;">Without vehicle service (Trekking)</span>
+            <span style="font-weight: 600; color: #059669;">₹3,300</span>
+        </li>
         `,
-        note: "Without Vehicle Service: <span style='font-weight:bold;'>₹3,200</span><br><hr />Rainy Season Only: <span style='font-weight:bold;'>₹3,000</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹4,700</span>)."
+        note: "Rainy Season Only (Trekking): <span style='font-weight:bold; color: #2563eb;'>₹3,200 </span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹1,700 + ₹3,200  = <span style='color:#059669;'>₹4,900</span></span>)."
     },
     four: {
         title: "4 Persons – Best Value",
-        price: "₹7,600",
+        price: "₹8,500",
         list: `
-        <li>Registration</li>
-        <li>1 Local Guide</li>
-        <li>Cave Entry (Dry Season)</li>
-        <li>Life Jacket</li>
-        <li>Torch Light (Free)</li>
-        <li>4×4 Vehicle (Dry Season)</li>
-        <li>Waterfall & Nature View</li>
-        <li>Bamboo Rafting (inside cave – dry season only)</li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Registration</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>1 Local Guide</span>
+            <span style="font-weight: 500;">₹350</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Cave Entry (Dry Season)</span>
+            <span style="font-weight: 500;">₹400</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Life Jacket</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Torch Light</span>
+            <span style="color: #22c55e; font-weight: 500;">Free</span>
+        </li>
+    
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 500; font-size: 1.0em;">
+            <span>Total</span>
+            <span style="color: #2563eb;">₹950  / Person</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 550;">
+            <span>4 Persons</span>
+            <span style="font-weight: 550;">₹3,800</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>4×4 Vehicle (Dry Season)</span>
+            <span style="font-weight: 500;">₹4,000</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1em;">
+            <span>Grand Total</span>
+            <span style="color: #2563eb;">₹7,800</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; background: #f9fafb; padding: 8px; border-radius: 6px; margin-top: 8px;">
+            <span style="font-size: 0.95em;">Without vehicle service (Trekking)</span>
+            <span style="font-weight: 600; color: #059669;">₹3,900</span>
+        </li>
         `,
-        note: "Without Vehicle Service: <span style='font-weight:bold;'>₹3,800</span><br><hr />Rainy Season Only: <span style='font-weight:bold;'>₹3,600</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹5,300</span>)."
+        note: "Rainy Season Only (Trekking): <span style='font-weight:bold; color: #2563eb;'>₹3,800 </span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹1,700 + ₹3,800  = <span style='color:#059669;'>₹5,500</span></span>)."
     },
     five: {
         title: "5 Persons",
         price: "₹8,250",
         list: `
-        <li>Registration</li>
-        <li>1 Local Guide</li>
-        <li>Cave Entry (Dry Season)</li>
-        <li>Life Jacket</li>
-        <li>Torch Light (Free)</li>
-        <li>4×4 Vehicle (Dry Season)</li>
-        <li>Waterfall & Nature View</li>
-        <li>Bamboo Rafting (inside cave – dry season only)</li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Registration</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>1 Local Guide</span>
+            <span style="font-weight: 500;">₹300</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Cave Entry (Dry Season)</span>
+            <span style="font-weight: 500;">₹400</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Life Jacket</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Torch Light</span>
+            <span style="color: #22c55e; font-weight: 500;">Free</span>
+        </li>
+    
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 500; font-size: 1.0em;">
+            <span>Total</span>
+            <span style="color: #2563eb;">₹900  / Person</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 550;">
+            <span>5 Persons</span>
+            <span style="font-weight: 550;">₹4,500</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>4×4 Vehicle (Dry Season)</span>
+            <span style="font-weight: 500;">₹4,000</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1em;">
+            <span>Grand Total</span>
+            <span style="color: #2563eb;">₹8,500</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; background: #f9fafb; padding: 8px; border-radius: 6px; margin-top: 8px;">
+            <span style="font-size: 0.95em;">Without vehicle service (Trekking)</span>
+            <span style="font-weight: 600; color: #059669;">₹4,600</span>
+        </li>
         `,
-        note: "Without Vehicle Service: <span style='font-weight:bold;'>₹4,500</span><br><hr />Rainy Season Only: <span style='font-weight:bold;'>₹4,000</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹5,700</span>)."
+        note: "Rainy Season Only (Trekking): <span style='font-weight:bold; color: #2563eb;'>₹4,500 </span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹1,700 + ₹4,500  = <span style='color:#059669;'>₹6,200</span></span>)."
+        
     },
     six: {
         title: "6 Persons",
-        price: "₹8,890",
+        price: "₹9,190",
         list: `
-        <li>Registration</li>
-        <li>1 Local Guide</li>
-        <li>Cave Entry (Dry Season)</li>
-        <li>Life Jacket</li>
-        <li>Torch Light (Free)</li>
-        <li>4×4 Vehicle (Dry Season)</li>
-        <li>Waterfall & Nature View</li>
-        <li>Bamboo Rafting (inside cave – dry season only)</li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Registration</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>1 Local Guide</span>
+            <span style="font-weight: 500;">₹265</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Cave Entry (Dry Season)</span>
+            <span style="font-weight: 500;">₹400</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Life Jacket</span>
+            <span style="font-weight: 500;">₹100</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Torch Light</span>
+            <span style="color: #22c55e; font-weight: 500;">Free</span>
+        </li>
+    
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 500; font-size: 1.0em;">
+            <span>Total</span>
+            <span style="color: #2563eb;">₹865  / Person</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 550;">
+            <span>6 Persons</span>
+            <span style="font-weight: 550;">₹5,190</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: center;">
+            <span>4×4 Vehicle (Dry Season)</span>
+            <span style="font-weight: 500;">₹4,000</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1em;">
+            <span>Grand Total</span>
+            <span style="color: #2563eb;">₹9,190</span>
+        </li>
+        <hr style="margin: 12px 0; border: none; border-top: 1px solid #e5e7eb;" />
+        <li style="display: flex; justify-content: space-between; align-items: center; background: #f9fafb; padding: 8px; border-radius: 6px; margin-top: 8px;">
+            <span style="font-size: 0.95em;">Without vehicle service (Trekking)</span>
+            <span style="font-weight: 600; color: #059669;">₹5,300</span>
+        </li>
         `,
-        note: "Without Vehicle Service: <span style='font-weight:bold;'>₹5,000</span><br><hr />Rainy Season Only: <span style='font-weight:bold;'>₹5,000</span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹6,700</span>)."
+        note: "Rainy Season Only (Trekking): <span style='font-weight:bold; color: #2563eb;'>₹5,200 </span> (Include halfway vehicle service: <span style='font-weight:bold;'>₹1,700 + ₹5,200  = <span style='color:#059669;'>₹6,900</span></span>)."
     }
 };
 
@@ -501,7 +709,6 @@ function closeImage() {
 }
 </script>
 
+
 </body>
 </html>
-
-
